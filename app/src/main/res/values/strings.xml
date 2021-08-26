@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">WK01HW02 Android REST API Login and Landing Page</string>
+    <string name="welcome">Welcome!</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="login">Login</string>
+    <string name="error_please_try_again">Error, please try again.</string>
+    <string name="logout">Logout</string>
+    <string name="welcome_back">Welcome Back</string>
+</resources>
