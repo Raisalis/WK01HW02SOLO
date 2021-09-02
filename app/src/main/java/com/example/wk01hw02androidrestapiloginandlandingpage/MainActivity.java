@@ -114,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
         //If passwords match, go to landing page (send username):
         Intent intent = factory.getIntent(MainActivity.this, LandingActivity.class);
         intent.putExtra("username", user.getUsername());
-        intent.putExtra("userId", user.getUserId());
+        intent.putExtra("userId", String.valueOf(user.getUserId()));
         return intent;
     }
 }
