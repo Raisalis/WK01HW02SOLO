@@ -1,5 +1,6 @@
 package com.example.wk01hw02androidrestapiloginandlandingpage;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -101,15 +102,15 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public Boolean verifyUsername(String dataUsername, String username) {
+    public Boolean verifyUsername(@NonNull String dataUsername, String username) {
         return dataUsername.equals(username);
     }
 
-    public Boolean verifyPassword(String dataPassword, String password) {
+    public Boolean verifyPassword(@NonNull String dataPassword, String password) {
         return dataPassword.equals(password);
     }
 
-    public Intent toLandingPage(IntentFactory factory, User user) {
+    public Intent toLandingPage(@NonNull IntentFactory factory, @NonNull User user) {
         //If passwords match, go to landing page (send username):
         Intent intent = factory.getIntent(MainActivity.this, LandingActivity.class);
         intent.putExtra("username", user.getUsername());
